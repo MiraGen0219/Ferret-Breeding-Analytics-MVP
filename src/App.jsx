@@ -1,12 +1,7 @@
-import Dashboard from "./pages/Dashboard";
-import "./App.css";
+import BreederAnalytics from "./pages/BreederAnalytics";
 
 function App() {
-  return (
-    <div>
-      <Dashboard />
-    </div>
-  );
+  return <BreederAnalytics />;
 }
 
-export default App;import "./App.css";
+export default App;
