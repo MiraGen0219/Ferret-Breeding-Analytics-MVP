@@ -32,6 +32,8 @@ function BreederAnalyticsCard({
         <strong>Survival Rate:</strong> {survivalRate}%
       </p>
     </div>
+
+    
   );
 }
 

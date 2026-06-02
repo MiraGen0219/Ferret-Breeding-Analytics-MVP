@@ -32,7 +32,6 @@ function Dashboard() {
         ? ((totalKitsSurvived / totalKitsBorn) * 100).toFixed(1)
         : 0;
     
-    
 
     return (
         <div className="page">
@@ -100,6 +99,8 @@ function Dashboard() {
             />
 
         </div>
+
+
         </div>
     );
 }

@@ -456,6 +456,15 @@ export const pairings = [
 },
 {
     id: 17,
+    hob: "Gooseberry",
+    jill: "Neraida",
+    year: 2024,
+    season: "Winter",
+    status: "Completed",
+    goal: "micro gene reveal"
+},
+{
+    id: 18,
     hob: "Steadfast Tin Soldier",
     jill: "Avgi",
     year: 2025,
@@ -464,7 +473,7 @@ export const pairings = [
     goal: "European structure, proportion"
 },
 {
-    id: 18,
+    id: 19,
     hob: "Pied Piper",
     jill: "Princess Aurora",
     year: 2025,
@@ -473,7 +482,7 @@ export const pairings = [
     goal: "micro gene structure reinforcement"
 },
 {
-    id: 19,
+    id: 20,
     hob: "Enarxi",
     jill: "Springtime",
     year: 2025,
@@ -482,7 +491,7 @@ export const pairings = [
     goal: "Structure, proportion, rib cover, heads"
 },
 {
-    id: 20,
+    id: 21,
     hob: "Jabberwocky",
     jill: "Baba Yaga",
     year: 2025,
@@ -491,7 +500,7 @@ export const pairings = [
     goal: "Structure, proportion"
 },
 {
-    id: 21,
+    id: 22,
     hob: "Boggart",
     jill: "Lady of the Lake",
     year: 2025,
@@ -500,7 +509,7 @@ export const pairings = [
     goal: "Strucutre, proportion"
 },
 {
-    id: 22,
+    id: 23,
     hob: "Mr. Jingles",
     jill: "Lady of the Lake",
     year: 2025,
@@ -509,13 +518,40 @@ export const pairings = [
     goal: "Structure, proportion correction"
 },
 {
-    id: 23,
+    id: 24,
     hob: "Ettin",
     jill: "Princess Pea",
     year: 2025,
     season: "Summer",
     status: "Completed",
     goal: "micro gene structure, proportion"
+},
+{
+    id: 25,
+    hob: "Gooseberry",
+    jill: "Neraida",
+    year: 2025,
+    season: "Spring",
+    status: "Completed",
+    goal: "micro gene reveal"
+},
+{
+    id: 26,
+    hob: "Mr. Jingles",
+    jill: "Swan Maiden",
+    year: 2026,
+    season: "Spring",
+    status: "Completed",
+    goal: "Structure, proportions"
+},
+{
+    id: 27,
+    hob: "Mr. Jingles",
+    jill: "Belle's Enchantment",
+    year: 2026,
+    season: "Spring",
+    status: "Completed",
+    goal: "Structure, proportions"
 }
 ]
 
@@ -526,7 +562,10 @@ export const litters = [
     year: 2026,
     season: "Summer",
     born: 8,
-    survived: 8
+    survived: 8,
+    jills: 6,
+    hobs: 2,
+    outcome: "Success"
 },
 {
     id: 2,
@@ -534,7 +573,10 @@ export const litters = [
     year: 2026,
     season: "Summer",
     born: 7,
-    survived: 6
+    survived: 6,
+    jills: 1,
+    hobs: 5,
+    outcome: "Success"
 },
 {
     id: 3,
@@ -542,7 +584,10 @@ export const litters = [
     year: 2026,
     season: "Summer",
     born: 11,
-    survived: 11
+    survived: 11,
+    jills: 5,
+    hobs: 5,
+    outcome: "Success"
 },
 { 
     id: 4,
@@ -550,7 +595,10 @@ export const litters = [
     year: 2023,
     season: "Spring",
     born: 4,
-    survived: 1
+    survived: 1,
+    jills: 1,
+    hobs: 0,
+    outcome: "Success"
 },
 {
     id: 5,
@@ -558,7 +606,10 @@ export const litters = [
     year: 2023,
     season: "Summer",
     born: 11,
-    survived: 10
+    survived: 10,
+    jills: 4,
+    hobs: 6,
+    outcome: "Success"
 },
 {
     id: 6,
@@ -566,7 +617,10 @@ export const litters = [
     year: 2023,
     season: "Summer",
     born: 12,
-    survived: 11
+    survived: 11,
+    jills: 7,
+    hobs: 4,
+    outcome: "Success"
 },
 {
     id: 7,
@@ -574,7 +628,10 @@ export const litters = [
     year: 2024,
     season: "Spring",
     born: 6,
-    survived: 5
+    survived: 5,
+    jills: 4,
+    hobs: 1,
+    outcome: "Success"
 },
 {
     id: 8,
@@ -582,7 +639,10 @@ export const litters = [
     year: 2024,
     season: "Spring",
     born: 8,
-    survived: 7
+    survived: 7,
+    jills: 1,
+    hobs: 6,
+    outcome: "Success"
 },
 {
     id: 9,
@@ -590,7 +650,10 @@ export const litters = [
     year: 2024,
     season: "Spring",
     born: 9,
-    survived: 8
+    survived: 8,
+    jills: 4,
+    hobs: 4,
+    outcome: "Success"
 },
 {
     id: 10,
@@ -598,7 +661,8 @@ export const litters = [
     year: 2024,
     season: "Spring",
     born: 0,
-    survived: 0
+    survived: 0,
+    outcome: "Success"
 },
 {
     id: 11,
@@ -606,7 +670,10 @@ export const litters = [
     year: 2024,
     season: "Spring",
     born: 12,
-    survived: 7
+    survived: 7,
+    jills: 3,
+    hobs: 4,
+    outcome: "Success"
 },
 {
     id: 12,
@@ -614,7 +681,10 @@ export const litters = [
     year: 2024,
     season: "Summer",
     born: 6,
-    survived: 2
+    survived: 2,
+    jills: 1,
+    hobs: 1,
+    outcome: "Success"
 },
 {
     id: 13,
@@ -622,62 +692,130 @@ export const litters = [
     year: 2024,
     season: "Spring",
     born: 6,
-    survived: 6
+    survived: 6,
+    jills: 3,
+    hobs: 3,
+    outcome: "Success"
 },
 {
     id: 14,
+    pairing: "Neraida x Gooseberry",
+    year: 2024,
+    season: "Winter",
+    born: 2,
+    survived: 2,
+    jills: 2,
+    hobs: 0,
+    outcome: "Success"
+},
+{
+    id: 15,
     pairing: "Avgi x Steadfast Tin Soldier",
     year: 2025,
     season: "Spring",
     born: 10,
-    survived: 5
+    survived: 5,
+    jills: 3,
+    hobs: 2,
+    outcome: "Success"
 },
 {
-    id: 15,
+    id: 16,
     pairing: "Princess Aurora x Pied Piper",
     year: 2025,
     season: "Spring",
     born: 5,
-    survived: 5
+    survived: 5,
+    jills: 2,
+    hobs: 3,
+    outcome: "Success"
 },
 {
-    id: 16,
+    id: 17,
     pairing: "Springtime x Enarxi",
     year: 2025,
     season: "Spring",
     born: 10,
-    survived: 4
+    survived: 4,
+    jills: 2,
+    hobs: 2,
+    outcome: "Success"
 },
 {
-    id: 17,
+    id: 18,
     pairing: "Baba Yaga x Jabberwocky",
     year: 2025,
     season: "Summer",
     born: 11,
-    survived: 11
+    survived: 11,
+    jills: 8,
+    hobs: 3,
+    outcome: "Success"
 },
 {
-    id: 18,
+    id: 19,
     pairing: "Lady of the Lake x Boggart",
     year: 2025,
     season: "Spring",
     born: 0,
-    survived: 0
+    survived: 0,
+    jills: 0,
+    hobs: 0,
+    outcome: "Success"
 },
 {
-    id: 19,
+    id: 20,
     pairing: "Lady of the Lake x Mr. Jingles",
     year: 2025,
     season: "Summer",
     born: 8,
-    survived: 7
+    survived: 7,
+    jills: 4,
+    hobs: 3,
+    outcome: "Success"
 },
 {
-    id: 20,
+    id: 21,
     pairing: "Princess Pea x Ettin",
     year: 2025,
     season: "Summer",
     born: 7,
-    survived: 7
+    survived: 7,
+    jills: 3,
+    hobs: 4,
+    outcome: "Success"
+},
+{
+    id: 22,
+    pairing: "Neraida x Gooseberry",
+    year: 2025,
+    season: "Spring",
+    born: 5,
+    survived: 4,
+    jills: 3,
+    hobs: 1,
+    outcome: "Success" 
+},
+{
+    id: 23,
+    pairing: "Swan Maiden x Mr. Jingles",
+    year: 2026,
+    season: "Spring",
+    born: null,
+    survived: 0,
+    jills: 0,
+    hobs: 0,
+    outcome: "Total Loss"
+},
+{
+    id: 24,
+    pairing: "Belle's Enchantment x Mr. Jingles",
+    year: 2026,
+    season: "Spring",
+    born: null,
+    survived: 0,
+    jills: 0,
+    hobs: 0,
+    outcome: "Total Loss"
 }
 ]
