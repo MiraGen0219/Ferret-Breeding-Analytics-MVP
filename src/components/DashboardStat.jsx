@@ -1,8 +1,8 @@
-function DashboardStat({ title, value }) {
+function DashboardStat({ label, value }) {
     return (
-        <div className="card stat-card">
-            <h2>{title}</h2>
-            <p>{value}</p>
+        <div className="dashboard-stat card">
+            <p>{label}</p>
+            <h2>{value}</h2>
         </div>
     );
 }

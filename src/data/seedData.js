@@ -8,7 +8,9 @@ export const ferrets = [
     color: "Champagne",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 2,
@@ -19,7 +21,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 3,
@@ -30,7 +34,9 @@ export const ferrets = [
     color: "Black",
     pattern: "Roan Mitt",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 4,
@@ -41,7 +47,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 5,
@@ -52,7 +60,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 6,
@@ -63,7 +73,9 @@ export const ferrets = [
     color: "Albino",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 7,
@@ -74,7 +86,9 @@ export const ferrets = [
     color: "Black Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 8,
@@ -85,7 +99,9 @@ export const ferrets = [
     color: "Black Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 9,
@@ -96,7 +112,9 @@ export const ferrets = [
     color: "Roan",
     pattern: "Mitt",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 10,
@@ -107,7 +125,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Point",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 11,
@@ -118,7 +138,9 @@ export const ferrets = [
     color: "Chocolate",
     pattern: "Standard",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 12,
@@ -129,7 +151,9 @@ export const ferrets = [
     color: "Roan",
     pattern: "Mitt",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 13,
@@ -141,6 +165,8 @@ export const ferrets = [
     pattern: "Standard",
     role: "Breeder",
     status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 14,
@@ -151,7 +177,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Point",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 15,
@@ -162,7 +190,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 16,
@@ -173,7 +203,9 @@ export const ferrets = [
     color: "Roan",
     pattern: "Mitt",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 17,
@@ -184,7 +216,9 @@ export const ferrets = [
     color: "Black Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 18,
@@ -195,7 +229,9 @@ export const ferrets = [
     color: "Black Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 19,
@@ -206,7 +242,9 @@ export const ferrets = [
     color: "Champagne",
     pattern: "Standard",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 20,
@@ -217,7 +255,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Point",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 21,
@@ -228,7 +268,9 @@ export const ferrets = [
     color: "Black Sable",
     pattern: "Mitt",
     role: "Breeder",
-    status: "Inactive"
+    status: "Inactive",
+    photo: "",
+    notes: ""
   },
   {
     id: 22,
@@ -239,7 +281,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Active"
+    status: "Active",
+    photo: "",
+    notes: ""
   },
   {
     id: 23,
@@ -250,7 +294,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Point",
     role: "Breeder",
-    status: "Retired"
+    status: "Retired",
+    photo: "",
+    notes: ""
   },
   {
     id: 24,
@@ -261,7 +307,9 @@ export const ferrets = [
     color: "Roan",
     pattern: "Mitt",
     role: "Breeder",
-    status: "Rehomed"
+    status: "Rehomed",
+    photo: "",
+    notes: ""
   },
   {
     id: 25,
@@ -272,7 +320,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Deceased"
+    status: "Deceased",
+    photo: "",
+    notes: ""
   },
   {
     id: 26,
@@ -283,7 +333,9 @@ export const ferrets = [
     color: "Black Sable",
     pattern: "Mitt",
     role: "Breeder",
-    status: "Rehomed"
+    status: "Rehomed",
+    photo: "",
+    notes: ""
   },
   {
     id: 27,
@@ -294,7 +346,9 @@ export const ferrets = [
     color: "Sable",
     pattern: "Standard",
     role: "Breeder",
-    status: "Deceased"
+    status: "Deceased",
+    photo: "",
+    notes: ""
   },
   {
     id: 28,
@@ -305,7 +359,9 @@ export const ferrets = [
     color: "Roan",
     pattern: "Mitt",
     role: "Breeder",
-    status: "Rehomed"
+    status: "Rehomed",
+    photo: "",
+    notes: ""
   }
 ];
 
@@ -344,6 +400,8 @@ export const pairings = [
     year: 2026,
     season: "Summer",
     status: "Completed",
+    dueDateStart: "2026-06-03",
+    dueDateEnd: "2026-06-05",
     goal: "Structure, proportion reinforcement"
 },
 {
@@ -353,6 +411,8 @@ export const pairings = [
     year: 2026,
     season: "Summer",
     status: "Completed",
+    dueDateStart: "2026-06-08",
+    dueDateEnd: "2026-06-10",
     goal: "Mini size, structure, proportions"
 },
 {
@@ -362,6 +422,8 @@ export const pairings = [
     year: 2026,
     season: "Summer",
     status: "Completed",
+    dueDateStart: "2026-07-01",
+    dueDateEnd: "2026-07-03",
     goal: "Mini size, structure, proportions"
 },
 {
@@ -584,7 +646,7 @@ export const litters = [
     year: 2026,
     season: "Summer",
     born: 11,
-    survived: 11,
+    survived: 10,
     jills: 5,
     hobs: 5,
     outcome: "Success"
@@ -657,12 +719,12 @@ export const litters = [
 },
 {
     id: 10,
-    pairing: "Enarxi x Cinderella",
+    pairing: "Cinderella x Enarxi",
     year: 2024,
     season: "Spring",
     born: 0,
     survived: 0,
-    outcome: "Success"
+    outcome: null
 },
 {
     id: 11,
@@ -761,7 +823,7 @@ export const litters = [
     survived: 0,
     jills: 0,
     hobs: 0,
-    outcome: "Success"
+    outcome: null
 },
 {
     id: 20,

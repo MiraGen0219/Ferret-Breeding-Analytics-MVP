@@ -6,102 +6,50 @@ function Dashboard() {
     const totalPairings = pairings.length;
     const totalLitters = litters.length;
 
+    const activeBreeders = ferrets.filter((ferret) => ferret.role === "Breeder" && ferret.status === "Active").length;
 
-    const activeFerrets = ferrets.filter(
-        (ferret) => ferret.status === "Active").length;
+    const pairingsWithoutLitters = pairings.filter((pairing) => {
+        const hasLitter = litters.some((litter) => litter.pairing === `${pairing.jill} x ${pairing.hob}` && litter.year === pairing.year);
 
-    const retiredFerrets = ferrets.filter(
-        (ferret) => ferret.status === "Retired").length;
+        return pairing.status === "Completed" && !hasLitter;
+    });
 
-    const inactiveFerrets = ferrets.filter(
-        (ferret) => ferret.status === "Inactive").length;
-
-    const rehomedFerrets = ferrets.filter(
-        (ferret) => ferret.status === "Rehomed").length;
-
-    const deceasedFerrets = ferrets.filter(
-        (ferret) => ferret.status === "Deceased").length;
-
-    const totalKitsBorn = litters.reduce((total, litter) => total + litter.born, 0);
-    const totalKitsSurvived = litters.reduce((total, litter) => total + litter.survived, 0);
-
-    const averageLitterSize = totalLitters > 0 
-        ? (totalKitsBorn / totalLitters).toFixed(1)
-        : 0;
-    const survivalRate = totalKitsBorn > 0
-        ? ((totalKitsSurvived / totalKitsBorn) * 100).toFixed(1)
-        : 0;
     
 
     return (
         <div className="page">
+
             <h1>Dashboard</h1>
 
-        <div className="card-grid">
-            <DashboardStat
-                title="Total Ferrets"
-                value={totalFerrets}
-            />
+            <div className="card-grid">
+                <DashboardStat label="Total Ferrets" value={totalFerrets} />
+                <DashboardStat label="Active Breeders" value={activeBreeders} />
+                <DashboardStat label="Pairings" value={totalPairings} />
+                <DashboardStat label="Litters" value={totalLitters} />
+            </div>
 
-            <DashboardStat
-                title="Active Breeders"
-                value={activeFerrets}
-            />
+            <div className="dashboard-sections">
+                <div className="card">
+                <h2>Expected Litters</h2>
 
-            <DashboardStat
-                title="Inactive Breeders"
-                value={inactiveFerrets}
-            />
-
-            <DashboardStat
-                title="Retired Breeders"
-                value={retiredFerrets}
-            />
-
-            <DashboardStat
-                title="Rehomed Ferrets"
-                value={rehomedFerrets}
-            />
-
-            <DashboardStat
-                title="Deceased Ferrets"
-                value={deceasedFerrets}
-            />
-
-            <DashboardStat
-                title="Total Pairings"
-                value={totalPairings}
-            />
-
-            <DashboardStat
-                title="Total Litters"
-                value={totalLitters}
-            />
-
-            <DashboardStat
-                title="Total Kits Born"
-                value={totalKitsBorn}
-            />
-
-            <DashboardStat
-                title="Total Kits Survived"
-                value={totalKitsSurvived}
-            />
-
-            <DashboardStat
-                title="Average Litter Size"
-                value={averageLitterSize}
-            />
-
-            <DashboardStat
-                title="Survival Rate"
-                value={`${survivalRate}%`}
-            />
-
-        </div>
-
-
-        </div>
+                {pairingsWithoutLitters.length === 0 ? (
+                    <p>No completed pairings currently waiting on litters.</p>
+                ) : (
+                    <ul>
+                        {pairingsWithoutLitters.map((pairing) => (
+                            <li key={pairing.id}>
+                                <strong>{pairing.jill} x {pairing.hob}</strong>
+                                <br />
+                                {pairing.season} {pairing.year}
+                                <br />
+                                Due: {pairing.dueDateStart} - {pairing.dueDateEnd}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+                </div>
+                </div>
+            </div>
     );
 }
 

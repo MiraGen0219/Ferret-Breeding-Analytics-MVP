@@ -1,146 +1,153 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #e5f3c9;
-  color: #2f2a26;
-}
-
-.app {
-  min-height: 100vh;
-}
-
-.navbar {
-  background-color: #253e2a;
-  padding: 1rem;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d5e6f4;
+    color: #2f2f2f;
 }
 
 .page {
-  padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+.page h1 {
+    margin-bottom: 24px;
+}
+
+.dashboard-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 18px;
+    margin-top: 24px;
 }
 
 .card {
-  background: white;
-  border: 1px solid #ddd0c4;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.stat-card {
-  text-align: center;
+.card li {
+    list-style-type: none;
 }
 
-.stat-card p {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0.5rem 0 0;
-}
-
-.search-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 0.75rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #cdbfaf;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.filter-controls {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 24px;
-}
-
-.search-input {
-  padding: 10px 12px;
-  border: 1px solid #d7c7b8;
-  border-radius: 8px;
-  font-size: 1rem;
-  background-color: #fffaf5;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #9b6f47;
-}
-
-.ferret-detail {
-  background-color: #fffaf5;
-  border: 1px solid #d7c7b8;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 24px 0;
-}
-
-.ferret-detail h2 {
-  margin-top: 0;
-}
-
-.ferret-detail h3 {
-  margin-top: 18px;
-  border-bottom: 1px solid #d7c7b8;
-  padding-bottom: 4px;
-}
-
-.ferret-detail ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.ferret-detail li {
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.ferret-detail li:last-child {
-  border-bottom: none;
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
 }
 
 .ferret-card {
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    background-color: whitesmoke;
 }
 
 .ferret-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+    background-color: white;
+}
+
+.card.ferret-detail {
+  background-color: white;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 28px;
+    background-color: #2f2f2f;
+    color: white;
+}
+
+.navbar-logo {
+    margin: 0;
+    color: lightslategray;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links a.active {
+    text-decoration: underline;
+}
+
+.ferret-detail {
+    margin-top: 24px;
 }
 
 .ferret-detail button {
-  margin-top: 16px;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.ferret-detail button:hobver {
-  opacity: 0.9;
+.photo-placeholder {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: 2px dashed #aaa;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    color: #777;
+    background-color: #f7f7f7;
+}
+
+.ferret-photo {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 16px 0;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ranking-table th,
+.ranking-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.ranking-table th {
+    background-color: #f4f1ed;
+    font-weight: bold;
 }
