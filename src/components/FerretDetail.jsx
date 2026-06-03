@@ -1,29 +1,18 @@
 function FerretDetail({ ferret, pairings, litters, onClose }) {
   const ferretPairings = pairings.filter(
-    (pairing) => pairing.jill === ferret.name || pairing.hob === ferret.name
-  );
+    (pairing) => pairing.jill === ferret.name || pairing.hob === ferret.name);
 
-  const ferretLitters = litters.filter((litter) =>
-    litter.pairing.includes(ferret.name)
-  );
+  const ferretLitters = litters.filter((litter) => litter.pairing.includes(ferret.name));
 
   const litterCount = ferretLitters.length;
 
-  const kitsBorn = ferretLitters.reduce(
-    (total, litter) => total + litter.born,
-    0
-  );
+  const kitsBorn = ferretLitters.reduce((total, litter) => total + litter.born, 0);
 
-  const kitsSurvived = ferretLitters.reduce(
-    (total, litter) => total + litter.survived,
-    0
-  );
+  const kitsSurvived = ferretLitters.reduce((total, litter) => total + litter.survived, 0);
 
-  const averageLitterSize =
-    litterCount > 0 ? (kitsBorn / litterCount).toFixed(1) : 0;
+  const averageLitterSize = litterCount > 0 ? (kitsBorn / litterCount).toFixed(1) : 0;
 
-  const survivalRate =
-    kitsBorn > 0 ? ((kitsSurvived / kitsBorn) * 100).toFixed(1) : 0;
+  const survivalRate = kitsBorn > 0 ? ((kitsSurvived / kitsBorn) * 100).toFixed(1) : 0;
 
   return (
     <div className="card ferret-detail">

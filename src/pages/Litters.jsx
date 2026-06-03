@@ -16,6 +16,8 @@ function Litters() {
     const [selectedLitter, setSelectedLitter] = useState(null);
     const [selectedTracker, setSelectedTracker] = useState(null);
 
+    function closeTracker() {setSelectedLitter(null); setSelectedTracker(null)}
+
     return (
         <div className="page">
             <h1>Litters</h1>
@@ -60,6 +62,7 @@ function Litters() {
                 
                 {selectedLitter && selectedTracker === "average" && (
                     <div className="card">
+                        <button onClick={closeTracker}>Close</button>
                         <h2>Litter Average Weight Tracker</h2>
                         <h3>{selectedLitter.pairing}</h3>
                         <p>{selectedLitter.season} {selectedLitter.year}</p>
@@ -69,6 +72,7 @@ function Litters() {
                 )}
                 {selectedLitter && selectedTracker === "individual" && (
                     <div className="card">
+                        <button onClick={closeTracker}>Close</button>
                         <h2>Individual Kit Weight Tracker</h2>
                         <h3>{selectedLitter.pairing}</h3>
                         <p>{selectedLitter.season} {selectedLitter.year}</p>
