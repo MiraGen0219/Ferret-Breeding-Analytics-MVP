@@ -207,3 +207,7 @@ Erin
 Software Engineer | Ferret Breeder | Full-Stack Developer in Training
 
 Building practical software solutions for animal breeding management and genetic record keeping.
+
+## Status
+
+In active development.
