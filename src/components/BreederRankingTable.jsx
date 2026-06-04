@@ -4,7 +4,7 @@ function BreederRankingTable({ title, breeders }) {
             <h2>{title}</h2>
 
             <table className="ranking-table">
-                <thread>
+                <thead>
                     <tr>
                         <th>Rank</th>
                         <th>Breeder</th>
@@ -13,7 +13,7 @@ function BreederRankingTable({ title, breeders }) {
                         <th>Kits Survived</th>
                         <th>Survival Rate</th>
                     </tr>
-                </thread>
+                </thead>
 
                 <tbody>
                     {breeders.map((breeder, index) => (

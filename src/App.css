@@ -121,7 +121,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 16px 0;
+    margin: 16px auto;
     color: #777;
     background-color: #f7f7f7;
 }
@@ -132,7 +132,7 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
-    margin: 16px 0;
+    margin: 16px auto;
 }
 
 .ranking-table {
@@ -151,3 +151,132 @@ body {
     background-color: #f4f1ed;
     font-weight: bold;
 }
+
+.weight-tracker-card {
+    margin-top: 2rem;
+}
+
+.weight-input-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.75rem;
+    margin: 1rem 0 2rem;
+    overflow-x: auto;
+}
+
+.weight-input-row {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.weight-input-row input {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.kit-weight-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.kit-header-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.kit-header-row input, 
+.kit-header-row select {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.muted-text {
+    color: #777;
+    font-style: italic;
+}
+
+.litter-notes-card {
+    margin-top: 1rem;
+    background: #fafafa;
+}
+
+.note-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.note-field textarea {
+    margin-top: 0.4rem;
+    min-height: 90px;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ranking-table th,
+.ranking-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.ranking-table th:first-child,
+.ranking-table td:first-child {
+    text-align: center;
+    width: 60px;
+}
+
+.ranking-table th:nth-child(2),
+.ranking-table th:nth-child(2) {
+    text-align: left;
+}
+
+.expected-litters-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.expected-litters-list li {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+.pairings-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0
+}
+
+.pairings-list li {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.litters-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.litters-list li {
+    padding-left: 0;
+    margin-left: 0;
+}
+

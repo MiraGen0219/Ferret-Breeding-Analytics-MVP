@@ -35,7 +35,7 @@ function Dashboard() {
                 {pairingsWithoutLitters.length === 0 ? (
                     <p>No completed pairings currently waiting on litters.</p>
                 ) : (
-                    <ul>
+                    <ul className="expected-litters-list">
                         {pairingsWithoutLitters.map((pairing) => (
                             <li key={pairing.id}>
                                 <strong>{pairing.jill} x {pairing.hob}</strong>

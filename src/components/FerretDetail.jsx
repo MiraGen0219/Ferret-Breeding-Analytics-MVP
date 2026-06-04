@@ -43,7 +43,7 @@ function FerretDetail({ ferret, pairings, litters, onClose }) {
 
       <h3>Pairings</h3>
       {ferretPairings.length > 0 ? (
-        <ul>
+        <ul className="pairings-list">
           {ferretPairings.map((pairing) => (
             <li key={pairing.id}>
               {pairing.season} {pairing.year} - {pairing.jill} x {pairing.hob}
@@ -56,7 +56,7 @@ function FerretDetail({ ferret, pairings, litters, onClose }) {
 
       <h3>Litters</h3>
       {ferretLitters.length > 0 ? (
-        <ul>
+        <ul className="litters-list">
           {ferretLitters.map((litter) => (
             <li key={litter.id}>
               {litter.season} {litter.year} - Born: {litter.born} | Survived:{" "}
